@@ -15,7 +15,7 @@ var App = React.createClass({
 
 });
 
-App.propTypes = { itemList: React.PropTypes.array.isRequired };
-App.defaultProps = { itemList: ["aa","bb","cc","dd","ff","gg","hh","ii"] };
+App.propTypes = {itemList : React.PropTypes.array.isRequired};
+App.defaultProps = {itemList : ["RED","GREEN","BLUE"]};
 
-React.render( <App /> , document.getElementById("div-bx"));
+React.render(<App />,document.getElementById("div-bx"));
