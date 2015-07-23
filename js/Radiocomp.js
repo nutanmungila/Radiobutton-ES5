@@ -1,12 +1,12 @@
 
 var React = require('react');
-var RadioItems = require('./RadioItems')
+var RadioItems = require('./RadioItems');
 
-export default var Radiocomp = React.createClass({
+var Radiocomp = React.createClass({
 
 	getInitialState:function () {
 		return {rval:""}
-	}
+	},
 
 	onItemSelectHandler:function(val) {
 		this.setState({rval:val});
@@ -22,4 +22,6 @@ export default var Radiocomp = React.createClass({
 			   		  </div>);
 	}
 
-})
+});
+
+module.exports = Radiocomp;
